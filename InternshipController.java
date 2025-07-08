@@ -49,7 +49,7 @@ public class InternshipController {
                     intern.setLocation(updatedIntern.getLocation());
                     return internshipRepository.save(intern);
                 })
-                .orElse(null); // Optionally return a 404 response here instead
+                .orElse(null); 
     }
 
     @DeleteMapping("/internships/{id}")
